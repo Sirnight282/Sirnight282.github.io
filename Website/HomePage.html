@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sirnight's MOC Pages</title>
+        <link href="Reset.css" rel="stylesheet" />
+        <link href="Style.css" rel="stylesheet" />
+        <!--importing Google's Roboto font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+        <!--font import end-->
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Sirnights MOC Pages</h1>
+            </header>
+            <h2>Sirnight's MOC Pages</h2>
+        </div>
+
+        <!--<div class="rectangle"></div>-->
+        <nav class="topNav">
+            <a href="/html/"> </a> |
+            <a href="About.html">ABOUT</a> |
+            <a href="Gallery.html">GALLERY</a> |
+            <a href="HomePage.html"> HOME </a> |
+            <a href="Collection.html">COLLECTION</a> |
+            <a href="/html/">  </a> 
+            </nav>
+        <div class="rectangleSmall"></div>
+
+        <div id="slideshow">
+            <img class="mySlides" src="Photos/matoro/Matoro Front.jpg" style="width:324px; display:block; margin:auto;" alt="Matoro Front View">
+            <img class="mySlides" src="Photos/matoro/Matoro Back.jpg" style="width:324px; display:block; margin:auto;" class="centerImage" alt="Matoro Back View">
+            <img class="mySlides" src="Photos/matoro/Matoro Ignika.jpg" style="width:324px; display:block; margin:auto;" class="centerImage" alt="Matoro Ignika">
+            <img class="mySlides" src="Photos/matoro/Matoro Family.jpg" style="width:324px; display:block; margin:auto;" class="centerImage" alt="Matoro Family View">
+            
+            
+            <script> 
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1}
+                        x[slideIndex-1].style.display = "block";
+                        setTimeout(carousel, 2500); // Change image every 2 seconds
+                    }
+            </script>
+        
+        </div> <!--slideshow-->
+
+        <div id="about">
+
+        </div> <!--about-->
+
+        <div id="gallery">
+                                    
+        </div> <!--gallery-->
+    
+    </body>
+</html>
